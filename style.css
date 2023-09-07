@@ -18,7 +18,10 @@ a {
 
 .header {
   height: 1024px;
-  background-image: url(img/BG.png);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/BG.PNG), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
