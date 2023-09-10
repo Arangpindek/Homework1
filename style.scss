@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    height: 1024px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(img/BG.PNG), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.title {
+    width: 788px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.top__text {
+    width: 488px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 44px;
+
+    &_keywords {
+        font-weight: 700;
+    }
+}
+
+.button {
+    width: 234px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover {
+        background: #EB443F;
+    }
+}
+
+.games {
+    height: 556px;
+    flex-shrink: 0;
+    background: #000915;
+}
+
+.for {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        height: 300px;
+        width: 379px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        border: 3px solid transparent;
+
+        &_text {
+            display: flex;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            padding: 32px;
+
+        }
+
+
+        &_1 {
+            background-image: url(img/Game1.png);
+        }
+
+        &_2 {
+            background-image: url(img/Game2.png);
+        }
+
+        &_3 {
+            background-image: url(img/Game3.png);
+        }
+
+        &:hover {
+            border: 3px solid #44D2FF;
+        }
+    }
+
+}
+
+
+
+
+.text_2 {
+    display: flex;
+}
