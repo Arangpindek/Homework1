@@ -92,7 +92,6 @@ a {
   flex-wrap: wrap;
   align-items: flex-end;
   border-radius: 16px;
-  background-repeat: no-repeat;
   border: 3px solid transparent;
 }
 .for__item_text {
@@ -106,18 +105,61 @@ a {
   padding: 32px;
 }
 .for__item_1 {
-  background-image: url(img/Game1.png);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game1BG.png), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
 }
 .for__item_2 {
-  background-image: url(img/Game2.png);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game2BG.png), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
 }
 .for__item_3 {
-  background-image: url(img/Game3.png);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game3BG.png), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
 }
 .for__item:hover {
   border: 3px solid #44D2FF;
 }
 
-.text_2 {
-  display: flex;
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+  }
+  .title {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+  }
+  .top__text {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+  .button__position {
+    display: flex;
+    justify-content: center;
+  }
+  .games {
+    height: auto;
+  }
+  .for {
+    display: flex;
+    row-gap: 32px;
+    height: 1221px;
+    align-content: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */
