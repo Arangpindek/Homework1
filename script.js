@@ -87,30 +87,42 @@ alert(+a + +b);
 // Задание 5
 let month = Number(prompt('Введите номер месяца'))
 switch (month) {
-    case 1 || 2 || 12:
+    case 1:
         console.log('Это зима');
         break;
-    case 3 || 4 || 5:
+    case 2:
+        console.log('Это зима');
+        break;
+    case 3:
         console.log('Это весна');
         break;
-    case 6 || 7 || 8:
+    case 4:
+        console.log('Это весна');
+        break;
+    case 5:
+        console.log('Это весна');
+        break;
+    case 6:
         console.log('Это лето');
         break;
-    case 9 || 10 || 11:
+    case 7:
+        console.log('Это лето');
+        break;
+    case 8:
+        console.log('Это лето');
+        break;
+    case 9:
+        console.log('Это осень');
+        break;
+    case 10:
+        console.log('Это осень');
+        break;
+    case 11:
+        console.log('Это осень');
+        break;
+    case 12:
         console.log('Это зима');
         break;
     default: console.log('Ты на какой планете живешь?');
         break;
 }
-
-// Задание 7
-let chet = prompt('Введите число')
-let chetzna = chet % 2
-if (isNaN(chetzna)) {
-    alert('Введено не число')
-} else
-    if (chetzna == 0) {
-        alert('Число четное')
-    } else {
-        alert('Число не четное')
-    }
