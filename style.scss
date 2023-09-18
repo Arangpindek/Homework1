@@ -94,7 +94,6 @@ a {
         flex-wrap: wrap;
         align-items: flex-end;
         border-radius: 16px;
-        background-repeat: no-repeat;
         border: 3px solid transparent;
 
         &_text {
@@ -111,15 +110,30 @@ a {
 
 
         &_1 {
-            background-image: url(img/Game1.png);
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/Game1BG.png), lightgray 50% / cover no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+
         }
 
         &_2 {
-            background-image: url(img/Game2.png);
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/Game2BG.png), lightgray 50% / cover no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+
         }
 
         &_3 {
-            background-image: url(img/Game3.png);
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/Game3BG.png), lightgray 50% / cover no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+
         }
 
         &:hover {
@@ -132,6 +146,4 @@ a {
 
 
 
-.text_2 {
-    display: flex;
-}
+@import'mobile';

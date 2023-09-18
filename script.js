@@ -52,3 +52,77 @@ alert(user[info]);
 //Задание 10
 let z10 = prompt("Как вас зовут");
 alert(`Привет, ${z10} !`)
+
+
+// 3 домашка
+// Задание 1
+let password = 'пароль';
+let passchek = prompt('Введите пароль');
+if (password == passchek) {
+    alert("Пароль введен верно")
+}
+else {
+    alert("Пароль введен неверно")
+}
+// Задание 2
+let c = Number(prompt('Введите число'));
+if (c > 0 && c < 10) {
+    console.log('true')
+} else {
+    console.log('false')
+}
+// Задание 3
+let d = Number(prompt('Введите число 1'));
+let e = Number(prompt('Введите число 2'));
+if (d > 100 || e > 100) {
+    console.log('true')
+} else {
+    console.log('false')
+}
+// Задание 4
+let a = '2';
+let b = '3';
+// Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
+alert(+a + +b);
+// Задание 5
+let month = Number(prompt('Введите номер месяца'))
+switch (month) {
+    case 1:
+        console.log('Это зима');
+        break;
+    case 2:
+        console.log('Это зима');
+        break;
+    case 3:
+        console.log('Это весна');
+        break;
+    case 4:
+        console.log('Это весна');
+        break;
+    case 5:
+        console.log('Это весна');
+        break;
+    case 6:
+        console.log('Это лето');
+        break;
+    case 7:
+        console.log('Это лето');
+        break;
+    case 8:
+        console.log('Это лето');
+        break;
+    case 9:
+        console.log('Это осень');
+        break;
+    case 10:
+        console.log('Это осень');
+        break;
+    case 11:
+        console.log('Это осень');
+        break;
+    case 12:
+        console.log('Это зима');
+        break;
+    default: console.log('Ты на какой планете живешь?');
+        break;
+}
