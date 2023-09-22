@@ -131,3 +131,46 @@ function numberCheker(n1, n2) {
 }
 
 numberCheker(Num1, Num2);
+
+//Задание 6
+let Num = prompt('введите  число')
+
+function cubefire(n) {
+    if (isNaN(n)) {
+        console.log('Переданный параметр не является числом');
+    } else {
+        let result = n * n * n;
+        return result
+    }
+}
+console.log(`${Num} в кубе равняется ${cubefire(Num)}`);
+
+// Задание 7
+
+
+function getArea() {
+    return Math.PI * (this.radius ** 2);
+}
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 5,
+    area: getArea,
+    perimeter: getPerimeter,
+};
+const circle2 = {
+    radius: 6,
+    area: getArea,
+    perimeter: getPerimeter,
+};
+
+console.log(circle1.perimeter());
+console.log(circle1.area());
+console.log(circle2.perimeter());
+console.log(circle2.area());
+
+//Задание 8
+
+let prompt 

@@ -143,7 +143,23 @@ a {
 
 }
 
+.gamePlace {
+    height: 800px;
+    flex-shrink: 0;
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.gameName {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
 @import'mobile';
