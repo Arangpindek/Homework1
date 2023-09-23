@@ -55,7 +55,9 @@ if (e > 7) {
 }
 
 // Домашка 5
+
 //Задание 1
+
 function smallerNum(a, b) {
     if (a > b) {
         return b;
@@ -66,24 +68,22 @@ function smallerNum(a, b) {
 console.log(smallerNum(2, 4));
 console.log(smallerNum(6, 6));
 console.log(smallerNum(8, 4));
+
 //Задание 2
-let num = prompt("Введите число?");
 
-if (num % 2 == 0) {
-
-    function printMessage() {
-        console.log("Число чётное!");
+function findEvenNumber(num) {
+    if (num % 2 == 0) {
+        return 'Число четное'
+    } else {
+        return 'Число нечетное'
     }
-
-} else {
-
-    function printMessage() {
-        console.log("Число нечётное!");
-    }
-
 }
+findEvenNumber();
+console.log(findEvenNumber(4));
+
 
 printMessage();
+
 //Задание 3.1
 
 let a = prompt('введите число')
@@ -95,6 +95,7 @@ function getSquare(num) {
 getSquare(a);
 
 //Задание 3.2
+
 let a = prompt('введите число')
 
 function getSquare(num) {
@@ -104,49 +105,54 @@ function getSquare(num) {
 console.log(getSquare(a));
 
 // Задание 4
-let age = prompt('введите ваш возраст')
-function ageRequest(num) {
-    if (num < 0) {
-        console.log('Вы ввели неправильное значение');
-    } else {
-        if (num >= -1 && num < 13) {
-            console.log('Привет, друг!');
-        } else {
-            console.log('Добро пожаловать!');
-        }
-    }
+
+function ageRequest() {
+    let age = prompt('введите ваш возраст');
+    if (isNaN(age)) {
+        alert('Вы ввели не возраст');
+    } else
+        if (age < 0) {
+            alert('Вы ввели неправильное значение');
+        } else
+            if (age < 13) {
+                alert('Привет, друг!');
+            } else {
+                alert('Добро пожаловать!');
+            }
 }
-ageRequest(age);
+
+ageRequest();
 
 //Задание 5
-let Num1 = prompt('введите 1 число')
-let Num2 = prompt('введите 2 число')
+
+
+let num1 = prompt('введите 1 число')
+let num2 = prompt('введите 2 число')
 
 function numberCheker(n1, n2) {
     if (isNaN(n1) || isNaN(n2)) {
-        console.log('Одно или оба значения не являются числом');
+        return 'Одно или оба значения не являются числом';
     } else {
-        console.log(n1 * n2);
+        return n1 * n2;
     }
 }
 
-numberCheker(Num1, Num2);
+numberCheker(num1, num2);
 
 //Задание 6
-let Num = prompt('введите  число')
 
-function cubefire(n) {
+function cubefire() {
+    let n = prompt('введите  число');
     if (isNaN(n)) {
-        console.log('Переданный параметр не является числом');
+        return 'Переданный параметр не является числом';
     } else {
-        let result = n * n * n;
-        return result
+        let result = n ** 3;
+        return `${n} в кубе равняется ${result}`
     }
 }
-console.log(`${Num} в кубе равняется ${cubefire(Num)}`);
+cubefire();
 
 // Задание 7
-
 
 function getArea() {
     return Math.PI * (this.radius ** 2);
@@ -170,7 +176,3 @@ console.log(circle1.perimeter());
 console.log(circle1.area());
 console.log(circle2.perimeter());
 console.log(circle2.area());
-
-//Задание 8
-
-let prompt 
