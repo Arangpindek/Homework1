@@ -23,7 +23,7 @@ let array4 = [];
 for (let i = 0; i < 3; i++) {
     array4[i] = [];
     for (let j = 0; j < 3; j++) {
-        array4[i][j] = j + 1;
+        array4[i][j] = 1;
     }
 }
 console.log(array4);
@@ -46,11 +46,15 @@ console.log(array6);
 //Задание 7 
 
 let array7 = [9, 8, 7, 6, 5];
-if (array7.includes(Number(prompt('Введи число')))) {
-    alert('Угадал')
-} else {
-    alert('Не угадал')
-}
+let kek = Number(prompt('Введи число'));
+if (!kek) {
+    alert('Вы ничего не ввели!')
+} else
+    if (array7.includes(kek)) {
+        alert('Угадал')
+    } else {
+        alert('Не угадал')
+    }
 
 //Задание 8
 
@@ -64,14 +68,13 @@ console.log(k);
 
 let array9 = [[1, 2, 3,],
 [4, 5, 6]]
-array9 = array9.flat(Infinity);
+array9 = array9.flat();
 console.log(array9);
 
 //Задание 10
 
 let array10 = [9, 8, 7, 6, 5];
-for (let i = 0; i < array10.length; i++) {
-    if (isNaN(array10[i] + array10[i + 1])) break;
+for (let i = 0; i < array10.length - 1; i++) {
     console.log(array10[i] + array10[i + 1])
 }
 
