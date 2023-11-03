@@ -2,14 +2,10 @@
 let hwt1 = 'js';
 console.log(hwt1.toUpperCase())
 //
-function searchStart(products, search) {
-
-    products.forEach((product) => {
-        if (product.toLowerCase().includes(search.toLowerCase())) {
-            console.log(product);
-        }
-    });
+function searchStart(array, prefix) {
+    return array.filter(item => item.toLowerCase().startsWith(prefix.toLowerCase()));
 }
+
 searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
 searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
 searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
@@ -28,7 +24,7 @@ console.log("Наименьшее число:", small);
 console.log("Наибольшее число:", large);
 //
 function getRandomInt(minValue, maxValue) {
-    return Math.round(Math.random() * maxValue);
+    return Math.floor(Math.random() * maxValue) + 1;
 }
 console.log(getRandomInt(1, 10));
 //
@@ -65,7 +61,7 @@ console.log(`Через 73 дня будет: ${currentDate}`);
 function formatDateTime(date) {
     const months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
     const weekdays = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
-    
+
     let day = date.getDate();
     let month = date.getMonth();
     let year = date.getFullYear();
@@ -73,12 +69,12 @@ function formatDateTime(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
-    
+
     let formattedDate = `Дата: ${day} ${months[month]} ${year} - это ${weekdays[weekday]}.`;
     let formattedTime = `Время: ${hours}:${minutes}:${seconds}`;
-    
+
     return `${formattedDate} ${formattedTime}`;
-    }
+}
 let currentDate = new Date();
 let formattedDateTime = formatDateTime(currentDate);
 console.log(formattedDateTime);
